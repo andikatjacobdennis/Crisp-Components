@@ -26,7 +26,7 @@ Here's an example of how to use the ControlsDictionary.xaml in your application:
 <Application.Resources>
     <ResourceDictionary>
         <ResourceDictionary.MergedDictionaries>
-            <ResourceDictionary Source="/Crisp.Components;component/Themes/ControlsDictionary.xaml"/>
+            <ResourceDictionary Source="/Crisp.Components;component/Themes/MergedDictionary.xaml"/>
         </ResourceDictionary.MergedDictionaries>
     </ResourceDictionary>
 </Application.Resources>
@@ -43,7 +43,7 @@ For example, to customize the ControlDictionary.xaml, you can create a new XAML 
 
 ```xml
 <ResourceDictionary.MergedDictionaries>
-    <ResourceDictionary Source="/Crisp.Components;component/Themes/ControlsDictionary.xaml"/>
+    <ResourceDictionary Source="/Crisp.Components;component/Themes/MergedDictionary.xaml"/>
 </ResourceDictionary.MergedDictionaries>
 
 <!-- Override the default style for the Button control -->

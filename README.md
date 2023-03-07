@@ -16,46 +16,51 @@ Install the Crisp.Components NuGet package in your project:
 Install-Package Crisp.Components
 ```
 
-Add a reference to the Crisp.Components library in your XAML file:
+## Installation
+To install Crisp.Components, simply download the source code and include the Crisp.Components.dll file in your project references.
+
+Alternatively, you can also use NuGet to install the package by running the following command in the Package Manager Console:
+
+```powershell
+Install-Package Crisp.Components
+```
+
+## Usage
+Once you have included the Crisp.Components library in your project, you can easily apply the themes to your WPF controls by referencing the appropriate dictionary in your XAML.
+
+Here's an example of how to use the ControlsDictionary.xaml in your application:
 
 ```xml
-<Window xmlns:crisp="clr-namespace:Crisp.Components;assembly=Crisp.Components">
-```
-Apply the desired theme to your window or control using the Style property:
-
-```xaml
-<Window Style="{StaticResource BlueTheme}">
-  <Grid>
-    <!-- Your application content here -->
-  </Grid>
-</Window>
+<Application.Resources>
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary Source="/Crisp.Components;component/Themes/ControlsDictionary.xaml"/>
+        </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+</Application.Resources>
 ```
 
-Customize the theme by modifying the predefined styles and templates or defining your own:
+Similarly, you can reference the other dictionaries provided by the library by replacing the Source attribute with the appropriate dictionary file name.
 
-```xaml
-<Style x:Key="BlueButtonStyle" TargetType="Button">
-  <Setter Property="Background" Value="#2196F3" />
-  <Setter Property="Foreground" Value="White" />
-  <Setter Property="BorderThickness" Value="0" />
-  <Setter Property="Padding" Value="8 4" />
-  <Setter Property="Template">
-    <Setter.Value>
-      <ControlTemplate TargetType="Button">
-        <Border Background="{TemplateBinding Background}"
-                BorderBrush="{TemplateBinding BorderBrush}"
-                BorderThickness="{TemplateBinding BorderThickness}"
-                Padding="{TemplateBinding Padding}">
-          <ContentPresenter HorizontalAlignment="Center"
-                            VerticalAlignment="Center" />
-        </Border>
-      </ControlTemplate>
-    </Setter.Value>
-  </Setter>
+## Customization
+The themes provided by Crisp.Components are fully customizable. You can modify the styles and templates provided by the library to match your application's branding and design.
+
+To customize the themes, you can create a new XAML file that merges the desired dictionary and overrides the styles and templates defined in it.
+
+For example, to customize the ControlDictionary.xaml, you can create a new XAML file and add the following code:
+
+```xml
+<ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="/Crisp.Components;component/Themes/ControlsDictionary.xaml"/>
+</ResourceDictionary.MergedDictionaries>
+
+<!-- Override the default style for the Button control -->
+<Style TargetType="{x:Type Button}">
+    <Setter Property="Background" Value="Red"/>
 </Style>
 ```
 
-For more information on using the Crisp.Components, see the official documentation.
+In this example, we're overriding the default style for the Button control and setting its background color to Red.
 
 ## Contributing
 Contributions to this library are welcome! If you find a bug or have a feature request, please open an issue on GitHub. If you would like to contribute code, please fork the repository and submit a pull request with your changes.

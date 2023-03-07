@@ -54,6 +54,10 @@ For example, to customize the ControlDictionary.xaml, you can create a new XAML 
 
 In this example, we're overriding the default style for the Button control and setting its background color to Red.
 
+## Built With
+- C#
+- .NET Core 7
+
 ## Contributing
 Contributions to this library are welcome! If you find a bug or have a feature request, please open an issue on GitHub. If you would like to contribute code, please fork the repository and submit a pull request with your changes.
 

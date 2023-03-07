@@ -7,14 +7,6 @@ Predefined themes for common UI elements, such as buttons, text boxes, and list 
 Easy-to-use XAML styles and templates that can be applied to any WPF control.
 Supports light and dark themes.
 Fully customizable to fit the needs of your application.
-Getting Started
-To use the Crisp.Components in your WPF application, follow these steps:
-
-Install the Crisp.Components NuGet package in your project:
-
-```powershell
-Install-Package Crisp.Components
-```
 
 ## Installation
 To install Crisp.Components, simply download the source code and include the Crisp.Components.dll file in your project references.

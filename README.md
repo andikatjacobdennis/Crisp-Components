@@ -22,7 +22,7 @@ Once you have included the Crisp.Components library in your project, you can eas
 
 Here's an example of how to use the ControlsDictionary.xaml in your application:
 
-```xml
+```xaml
 <Application.Resources>
     <ResourceDictionary>
         <ResourceDictionary.MergedDictionaries>
@@ -41,7 +41,7 @@ To customize the themes, you can create a new XAML file that merges the desired 
 
 For example, to customize the ControlDictionary.xaml, you can create a new XAML file and add the following code:
 
-```xml
+```xaml
 <ResourceDictionary.MergedDictionaries>
     <ResourceDictionary Source="/Crisp.Components;component/Themes/MergedDictionary.xaml"/>
 </ResourceDictionary.MergedDictionaries>

@@ -1,6 +1,6 @@
 # Crisp-Components
 
-This is a library that provides a collection of UI themes for WPF applications developed using .NET 4.7.2. Designed to provide a modern and crisp look and feel across all controls in your application. The themes are implemented using XAML styles and templates.
+This is a library that provides a collection of UI themes for WPF applications developed using .NET Core 7. Designed to provide a modern and crisp look and feel across all controls in your application. The themes are implemented using XAML styles and templates.
 
 ## Features
 Predefined themes for common UI elements, such as buttons, text boxes, and list boxes.
